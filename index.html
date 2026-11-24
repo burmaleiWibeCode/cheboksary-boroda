@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Борода — крафтовый бар на бульваре Купца Ефремова, Чебоксары</title>
+<meta name="description" content="«Борода» — крафтовый бар в исторической части Чебоксар: лагер, стаут, IPA, эль, медовуха, сидр и лимонады. Пиво от 200 ₽. 18+">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { night:'#14100C', coal:'#1D1712', amber:'#E3A455', cream:'#F2E6D0', brick:'#A8402F', moss:'#5C6B4A', dust:'#9C8B76' },
+      fontFamily: { display:['Unbounded','Impact','sans-serif'], sans:['Inter','system-ui','sans-serif'], mono:['"JetBrains Mono"','monospace'] }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#14100C; color:#F2E6D0; }
+  .grain::after {
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:60; opacity:.07; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .stamp { transform: rotate(-6deg); border:2px solid #E3A455; }
+  .rule { border-color: rgba(242,230,208,.16); }
+  .marquee { display:flex; gap:2.5rem; white-space:nowrap; animation: slide 34s linear infinite; }
+  @keyframes slide { from { transform: translateX(0);} to { transform: translateX(-50%);} }
+  input[type=range] { -webkit-appearance:none; appearance:none; width:100%; height:2px; background:#3A2F26; outline:none; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; width:22px; height:22px; border-radius:9999px; background:#E3A455; border:3px solid #14100C; cursor:pointer; }
+  input[type=range]::-moz-range-thumb { width:18px; height:18px; border-radius:9999px; background:#E3A455; border:3px solid #14100C; cursor:pointer; }
+  .photo { filter: sepia(.18) saturate(.95) contrast(1.05); }
+</style>
+</head>
+<body class="font-sans antialiased grain">
+
+<header class="sticky top-0 z-40 border-b rule bg-night/90 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
+    <a href="#top" class="font-display text-lg font-800 tracking-wide">БОРОДА<span class="text-amber">.</span></a>
+    <nav class="hidden gap-6 font-mono text-[10px] uppercase tracking-[.18em] text-cream/60 md:flex">
+      <a href="#about" class="hover:text-amber">О баре</a>
+      <a href="#craft" class="hover:text-amber">Крафт-компас</a>
+      <a href="#beer" class="hover:text-amber">Что на кране</a>
+      <a href="#contacts" class="hover:text-amber">Контакты</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <span class="stamp hidden px-2 py-1 font-mono text-[10px] text-amber sm:inline">18+</span>
+      <a href="tel:+78352449991" class="font-mono text-[11px] tracking-[.1em] text-cream/70 hover:text-amber">+7 (8352) 44-99-91</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="mx-auto grid max-w-6xl gap-10 px-5 pt-10 pb-14 md:grid-cols-[1.2fr_.8fr] md:items-end md:gap-14 md:pt-14">
+    <div>
+      <p class="font-mono text-[10px] uppercase tracking-[.3em] text-amber">Крафтовый бар · Чебоксары · 4,9 ★</p>
+      <h1 class="mt-4 font-display text-[44px] font-800 leading-[.92] tracking-tight sm:text-6xl md:text-[80px]">
+        Одиннадцать<br>
+        лет<br>
+        <span class="text-amber">на кране</span>
+      </h1>
+      <p class="mt-6 max-w-md text-[15px] leading-relaxed text-cream/70">
+        «Борода» — крафтовый бар в исторической части Чебоксар. Лагер, стаут, IPA, эль,
+        медовуха, сидр и лимонады — и всё это можно пробовать по бокалам, а не покупать ящиками.
+        Пиво — от 200 ₽.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#craft" class="bg-amber px-6 py-3 font-display text-[12px] font-600 uppercase tracking-[.16em] text-night hover:bg-cream">Подобрать крафт</a>
+        <a href="https://vk.ru/borodabar21" target="_blank" rel="noopener" class="border border-cream/25 px-6 py-3 font-mono text-[11px] uppercase tracking-[.16em] hover:border-amber hover:text-amber">Забронировать стол</a>
+      </div>
+    </div>
+
+    <figure class="relative">
+      <img src="https://avatars.mds.yandex.net/get-altay/10647561/2a0000018a94d1196b14270c5c3be3dba89c/XXXL"
+           alt="Крафтовый бар Борода в Чебоксарах" class="photo aspect-[4/5] w-full object-cover">
+      <figcaption class="absolute right-3 top-4 stamp bg-night/80 px-3 py-2 font-mono text-[10px] uppercase tracking-[.2em] text-amber">IV года<br>подряд</figcaption>
+    </figure>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="overflow-hidden border-y rule py-3">
+    <div class="marquee font-display text-xs font-600 uppercase tracking-[.28em] text-cream/35">
+      <span>Лагер</span><span class="text-amber">●</span><span>Стаут</span><span class="text-amber">●</span><span>IPA</span><span class="text-amber">●</span><span>Эль</span><span class="text-amber">●</span><span>Медовуха</span><span class="text-amber">●</span><span>Сидр</span><span class="text-amber">●</span>
+      <span>Лагер</span><span class="text-amber">●</span><span>Стаут</span><span class="text-amber">●</span><span>IPA</span><span class="text-amber">●</span><span>Эль</span><span class="text-amber">●</span><span>Медовуха</span><span class="text-amber">●</span><span>Сидр</span><span class="text-amber">●</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="mx-auto max-w-6xl px-5 py-16">
+    <div class="grid gap-10 md:grid-cols-[.9fr_1.1fr] md:gap-16">
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[.3em] text-amber">01 — О баре</p>
+        <h2 class="mt-3 font-display text-3xl font-600 leading-tight md:text-4xl">Бар, который<br>не надо объяснять</h2>
+        <p class="mt-5 text-[15px] leading-relaxed text-cream/70">
+          Здесь не спрашивают «что-нибудь попроще». Здесь спрашивают, что вам нравилось в прошлый раз,
+          и наливают половину, чтобы вы попробовали. Одиннадцать лет — это не рекорд, это привычка
+          ходить в одно место и каждый раз находить новое пиво.
+        </p>
+        <p class="mt-4 text-[15px] leading-relaxed text-cream/70">
+          Летом — столы на бульваре, зимой — тесная посадка у бара. Кухня и закуски к пиву,
+          кальян, настольные игры и «Бородатый сейф» с призом, который пока никто не забрал.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <img src="https://avatars.mds.yandex.net/get-altay/813485/2a00000186d34bd87f11c54f422d6d86b71b/XXXL" alt="Бар Борода, зал" loading="lazy" class="photo col-span-2 aspect-[16/10] w-full object-cover">
+        <img src="https://avatars.mds.yandex.net/get-altay/1042100/2a00000168b9d93262424b5004f82197514b/XXXL" alt="Бар Борода, барная стойка" loading="lazy" class="photo aspect-square w-full object-cover">
+        <img src="https://avatars.mds.yandex.net/get-altay/16137047/2a00000198e01c885e025b0685bf2a862a85/XXXL" alt="Бар Борода, гости" loading="lazy" class="photo aspect-square w-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT COMPASS -->
+  <section id="craft" class="border-y rule bg-coal">
+    <div class="mx-auto max-w-6xl px-5 py-14">
+      <div class="mb-8">
+        <p class="font-mono text-[10px] uppercase tracking-[.3em] text-amber">02 — Крафт-компас</p>
+        <h2 class="mt-3 font-display text-4xl font-700 md:text-5xl">Подберите своё пиво</h2>
+        <p class="mt-3 max-w-lg text-[13px] leading-relaxed text-cream/60">Два ползунка — и мы скажем, с какого стиля начать. Это не тест на сомелье, это способ не растеряться у крана.</p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-[1fr_.9fr] md:gap-12">
+        <div class="space-y-8">
+          <div>
+            <div class="mb-2 flex justify-between font-mono text-[10px] uppercase tracking-[.16em] text-cream/50">
+              <span>Лёгкое</span><span>Плотное</span>
+            </div>
+            <input id="density" type="range" min="0" max="100" value="40" aria-label="Плотность">
+          </div>
+          <div>
+            <div class="mb-2 flex justify-between font-mono text-[10px] uppercase tracking-[.16em] text-cream/50">
+              <span>Мягкое</span><span>Горькое</span>
+            </div>
+            <input id="bitter" type="range" min="0" max="100" value="35" aria-label="Горечь">
+          </div>
+          <div>
+            <div class="mb-2 flex justify-between font-mono text-[10px] uppercase tracking-[.16em] text-cream/50">
+              <span>Хочу сладкое</span><span>Не хочу</span>
+            </div>
+            <input id="sweet" type="range" min="0" max="100" value="50" aria-label="Сладость">
+          </div>
+        </div>
+
+        <aside class="border rule bg-night/60 p-6">
+          <p class="font-mono text-[10px] uppercase tracking-[.26em] text-cream/45">Ваш стиль</p>
+          <h3 id="recName" class="mt-3 font-display text-3xl font-700 text-amber">Лагер</h3>
+          <p id="recDesc" class="mt-3 text-[13px] leading-relaxed text-cream/70">Чистый, солодовый, без сюрпризов. Хорошо идёт под разговор и под закуски.</p>
+          <div class="mt-5 flex items-end justify-between border-t rule pt-4">
+            <span class="font-mono text-[10px] uppercase tracking-[.2em] text-cream/45">Бокал</span>
+            <span class="font-display text-3xl font-700">от 200 ₽</span>
+          </div>
+          <a id="recLink" href="https://vk.ru/borodabar21" target="_blank" rel="noopener"
+             class="mt-5 block bg-amber px-5 py-3 text-center font-display text-[11px] font-600 uppercase tracking-[.16em] text-night hover:bg-cream">Написать в «Бороду»</a>
+          <button id="copyBtn" type="button" class="mt-2 w-full border rule px-4 py-3 font-mono text-[10px] uppercase tracking-[.14em] text-cream/60 hover:border-amber hover:text-amber">Скопировать сообщение</button>
+          <p class="mt-3 text-[10px] leading-relaxed text-cream/40">Копирует готовый текст с выбранным стилем — вставьте его в чат бара.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEER -->
+  <section id="beer" class="mx-auto max-w-6xl px-5 py-16">
+    <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[.3em] text-amber">03 — Что на кране</p>
+        <h2 class="mt-3 font-display text-4xl font-700 md:text-5xl">Карта стилей</h2>
+      </div>
+      <p class="max-w-xs text-[12px] leading-relaxed text-dust">Кран обновляется каждую неделю. Список стилей — из описания бара, наличие уточняйте у бармена.</p>
+    </div>
+
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="border rule p-5">
+        <p class="font-display text-xl font-600">Лагер</p>
+        <p class="mt-1 text-[13px] leading-relaxed text-cream/60">Светлый, чистый, с мягкой солодовой нотой. Начало для тех, кто «не любит пиво».</p>
+        <p class="mt-3 font-mono text-[11px] text-amber">от 200 ₽</p>
+      </div>
+      <div class="border rule p-5">
+        <p class="font-display text-xl font-600">Стаут</p>
+        <p class="mt-1 text-[13px] leading-relaxed text-cream/60">Жжёный солод, кофе и шоколад. Плотный, как разговор в конце вечера.</p>
+        <p class="mt-3 font-mono text-[11px] text-amber">от 200 ₽</p>
+      </div>
+      <div class="border rule p-5">
+        <p class="font-display text-xl font-600">IPA</p>
+        <p class="mt-1 text-[13px] leading-relaxed text-cream/60">Хмель, цитрус, горечь. Для тех, кто уже понял, что ему нравится.</p>
+        <p class="mt-3 font-mono text-[11px] text-amber">от 200 ₽</p>
+      </div>
+      <div class="border rule p-5">
+        <p class="font-display text-xl font-600">Эль</p>
+        <p class="mt-1 text-[13px] leading-relaxed text-cream/60">Фруктовые эфиры, мягкая карамель, средняя плотность. Универсальный вариант.</p>
+        <p class="mt-3 font-mono text-[11px] text-amber">от 200 ₽</p>
+      </div>
+      <div class="border rule p-5">
+        <p class="font-display text-xl font-600">Медовуха</p>
+        <p class="mt-1 text-[13px] leading-relaxed text-cream/60">Мёд, специи, тёплая сладость. Не пиво — но в «Бороде» её берут не меньше.</p>
+        <p class="mt-3 font-mono text-[11px] text-amber">от 200 ₽</p>
+      </div>
+      <div class="border rule p-5">
+        <p class="font-display text-xl font-600">Сидр и лимонады</p>
+        <p class="mt-1 text-[13px] leading-relaxed text-cream/60">Яблоко, ягоды, газация. Для тех, кто за рулём или просто не пьёт.</p>
+        <p class="mt-3 font-mono text-[11px] text-amber">от 200 ₽</p>
+      </div>
+    </div>
+    <p class="mt-6 font-mono text-[10px] uppercase tracking-[.2em] text-dust">18+ · Продажа алкоголя лицам младше 18 лет запрещена</p>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts" class="border-t rule bg-coal">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-3">
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[.26em] text-cream/45">Адрес</p>
+        <p class="mt-2 font-display text-2xl font-600">бул. Купца Ефремова, 16</p>
+        <p class="text-[13px] text-cream/60">Чебоксары, историческая часть</p>
+        <a href="https://yandex.ru/maps/org/boroda/1767515283/" target="_blank" rel="noopener" class="mt-3 inline-block font-mono text-[11px] uppercase tracking-[.14em] text-amber hover:text-cream">Маршрут →</a>
+      </div>
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[.26em] text-cream/45">Часы</p>
+        <p class="mt-2 text-[14px]">Пн–Чт, Вс — 17:00–01:00</p>
+        <p class="text-[14px]">Пт–Сб — 17:00–03:00</p>
+      </div>
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[.26em] text-cream/45">Связь</p>
+        <a href="tel:+78352449991" class="mt-2 block font-display text-xl hover:text-amber">+7 (8352) 44-99-91</a>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <a href="https://vk.ru/borodabar21" target="_blank" rel="noopener" class="border rule px-4 py-2 font-mono text-[10px] uppercase tracking-[.14em] hover:border-amber hover:text-amber">ВКонтакте</a>
+          <a href="https://t.me/borodabar21" target="_blank" rel="noopener" class="border rule px-4 py-2 font-mono text-[10px] uppercase tracking-[.14em] hover:border-amber hover:text-amber">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t rule">
+  <div class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 font-mono text-[10px] uppercase tracking-[.18em] text-dust md:flex-row md:justify-between">
+    <span>Борода · Чебоксары · 4,9 ★ · 18+</span>
+    <span>Демо-концепт сайта · подготовлено для бара «Борода»</span>
+  </div>
+</footer>
+
+<script>
+  const density = document.getElementById('density');
+  const bitter = document.getElementById('bitter');
+  const sweet = document.getElementById('sweet');
+  const recName = document.getElementById('recName');
+  const recDesc = document.getElementById('recDesc');
+  const recLink = document.getElementById('recLink');
+
+  const STYLES = {
+    lager: { name: 'Лагер', desc: 'Чистый, солодовый, без сюрпризов. Хорошо идёт под разговор и под закуски.' },
+    ale: { name: 'Эль', desc: 'Фруктовые эфиры, мягкая карамель, средняя плотность. Универсальный вариант на вечер.' },
+    ipa: { name: 'IPA', desc: 'Хмель, цитрус, горечь. Для тех, кто уже понял, что ему нравится.' },
+    stout: { name: 'Стаут', desc: 'Жжёный солод, кофе и шоколад. Плотный, как разговор в конце вечера.' },
+    mead: { name: 'Медовуха', desc: 'Мёд, специи, тёплая сладость. Не пиво — но её здесь берут не меньше.' },
+    cider: { name: 'Сидр', desc: 'Яблоко, ягоды, газация. Для тех, кто за рулём или просто не пьёт.' }
+  };
+
+  function pick(d, b, s) {
+    if (s > 70) return d > 55 ? 'stout' : 'mead';
+    if (b > 65) return d > 55 ? 'stout' : 'ipa';
+    if (d > 70) return 'stout';
+    if (d > 45) return 'ale';
+    if (s > 55) return 'cider';
+    return 'lager';
+  }
+
+  function render() {
+    const key = pick(Number(density.value), Number(bitter.value), Number(sweet.value));
+    const st = STYLES[key];
+    recName.textContent = st.name;
+    recDesc.textContent = st.desc;
+    window.__msg = 'Здравствуйте! Хочу забронировать стол в «Бороде». По крафт-компасу мне подходит: ' + st.name + '. Подскажите, что сейчас есть на кране?';
+  }
+
+  [density, bitter, sweet].forEach(el => el.addEventListener('input', render));
+
+  const copyBtn = document.getElementById('copyBtn');
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.__msg || '');
+      copyBtn.textContent = 'Скопировано ✓';
+      setTimeout(() => { copyBtn.textContent = 'Скопировать сообщение'; }, 2000);
+    } catch {
+      copyBtn.textContent = 'Не удалось скопировать';
+    }
+  });
+  render();
+</script>
+</body>
+</html>
